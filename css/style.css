@@ -1,0 +1,148 @@
+/* подключаемые шрифты */
+@font-face {
+    font-family: 'Lemon';
+    src: local('fonts/Lemon Regular'), local('Lemon-Regular'),
+        url('fonts/Lemon-Regular.woff2') format('woff2'),
+        url('/fonts/Lemon-Regular.woff') format('woff'),
+        url('fonts/Lemon-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --brandcolor: #FF5700;
+    --brandcolorlight: #FF8445;
+    --brandfont: 'Lemon' ;
+    --Roboto: 'Roboto', sans-serif;
+    --RobotoMono: 'Roboto Mono', monospace;
+    --RobotoSlab: 'Roboto Slab', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--RobotoSlab);
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    display: block;
+    
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.header-flex {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    min-height: 35px;
+}
+
+.header-logo {
+    flex-basis: auto;
+    width: 60%;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    padding: 0px 0 0 75px;
+    background-position: 0 5px;
+    font-family: var(--brandfont);
+    font-style: normal;
+}
+
+.name {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--brandcolor);
+}
+
+.slogan {
+    font-size: 14px;
+    color: var(--brandcolor);
+    text-transform: uppercase;
+    font-family: var(--RobotoSlab);
+}
+
+.header-phone {
+    width: 29%;
+    font-family: var(--RobotoMono);
+    color: var(--brandcolor);
+    font-size: 24px;
+}
+.header-phone span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-menu {
+    width: 50px;
+    min-height: 50px;
+    background-image: url(../images/menu.svg);
+    background-size: contain;
+    cursor: pointer;
+}
+.header-line{
+    min-height:60px;
+    background: var(--brandcolor);
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+.header-line_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:60px;
+   
+}
+.header-line_flex a{
+    padding: 10px 20px;
+    font-family: var(--RobotoSlab);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+.header-line_flex a:hover, .link-active{
+    background: #FF8445;
+    padding: 10px 20px;
+}
+.content{
+    background-image: url(../images/nuts.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    min-height: 780px;
+    
+
+}
+.content-flex{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    padding-top: 200px;
+    text-align: center;
+}
+.content-flex h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.content-flex h1 > span{
+    color: var(--brandcolorlight);
+}
+.content-slogan{
+    text-align: center;
+    color: var(--brandcolorlight);
+    font-size: 22px;
+}
