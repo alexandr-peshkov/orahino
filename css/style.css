@@ -10,12 +10,19 @@
 }
 
 :root {
+    --whitecolors: #ffffff;
     --brandcolor: #FF5700;
     --brandcolorlight: #FF8445;
-    --brandfont: 'Lemon' ;
+    --brandcolordark: #A13700;
+    --brandfont: 'Lemon';
     --Roboto: 'Roboto', sans-serif;
     --RobotoMono: 'Roboto Mono', monospace;
     --RobotoSlab: 'Roboto Slab', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -24,22 +31,26 @@ body {
     font-family: var(--RobotoSlab);
     font-size: 16px;
 }
-a{
+
+a {
     text-decoration: none;
     display: block;
-    
+
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-h1{
+
+h1 {
     margin: 0;
     padding: 0;
 }
+
 .container {
-    width: 1366px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -48,21 +59,24 @@ h1{
     padding: 10px 0;
     align-items: center;
     min-height: 35px;
+    justify-content: space-between;
 }
 
 .header-logo {
     flex-basis: auto;
-    width: 60%;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     padding: 0px 0 0 75px;
-    background-position: 0 5px;
+    background-position: 0 0;
     font-family: var(--brandfont);
     font-style: normal;
+    background-size: 66px;
+    width: 50%;
+
 }
 
 .name {
-    font-size: 36px;
+    font-size: 30px;
     text-transform: uppercase;
     color: var(--brandcolor);
 }
@@ -75,12 +89,12 @@ h1{
 }
 
 .header-phone {
-    width: 29%;
     font-family: var(--RobotoMono);
     color: var(--brandcolor);
     font-size: 24px;
 }
-.header-phone span{
+
+.header-phone span {
     font-size: 30px;
     font-weight: bold;
 }
@@ -92,57 +106,94 @@ h1{
     background-size: contain;
     cursor: pointer;
 }
-.header-line{
-    min-height:60px;
+
+.header-line {
+    min-height: 60px;
     background: var(--brandcolor);
     box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
 
 }
-.header-line_flex{
+
+.header-line_flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height:60px;
-   
+    min-height: 60px;
+
 }
-.header-line_flex a{
+
+.header-line_flex a {
     padding: 10px 20px;
     font-family: var(--RobotoSlab);
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--whitecolors);
 }
-.header-line_flex a:hover, .link-active{
-    background: #FF8445;
+
+.header-line_flex a:hover,
+.link-active {
+    background: var(--brandcolorlight);
     padding: 10px 20px;
 }
-.content{
+
+.content {
     background-image: url(../images/nuts.svg);
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    min-height: 780px;
-    
+
 
 }
-.content-flex{
+
+.content-flex {
     display: flex;
-    justify-content: center;
-    color:#fff;
-    padding-top: 200px;
+    align-items: center;
+    color: var(--whitecolors);
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    min-height: 610px;
+
 }
-.content-flex h1{
+
+.content-flex h1 {
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 50px;
 }
-.content-flex h1 > span{
+
+.content-flex h1>span {
     color: var(--brandcolorlight);
 }
-.content-slogan{
-    text-align: center;
+
+.content-slogan {
     color: var(--brandcolorlight);
-    font-size: 22px;
+    font-size: 16px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.content-button {
+    text-align: center;
+    color: var(--whitecolors);
+    background: var(--brandcolor);
+    box-shadow: 5px 10px 0 var(--brandcolordark);
+    padding: 25px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    width: 350px;
+}
+
+.catalog-name {
+    font-family: var(--RobotoSlab);
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--brandcolor);
+    text-transform: uppercase;
+    text-align: center;
+}
+.product-name{
+    height: 300px;
+    background: url(../images/catalog.svg) no-repeat;
 }
