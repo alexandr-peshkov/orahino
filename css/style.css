@@ -309,10 +309,10 @@ h1 {
     padding: 20px;
     text-transform: uppercase;
     display: inline-block;
-    background:var(--brandcolorlight);
+    background:var(--brandcolor);
     color:var(--whitecolors);
     border-radius:10px;
-    box-shadow: 3px 3px var(--brandcolor);
+    box-shadow: 3px 3px var(--brandcolorlight);
     font-size: 14px;    
 }
 .content h2{
@@ -321,4 +321,8 @@ h1 {
     color:var(--brandcolor);
     margin-bottom: 10px;
     display: inline-block;
+}
+.footer{
+    min-height: 300px;
+    background:var(--brandcolorlight);
 }
