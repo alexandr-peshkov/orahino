@@ -50,7 +50,7 @@ h1 {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 1166px;
     margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ h1 {
     padding: 10px 20px;
 }
 
-.content {
+.header-background {
     background-image: url(../images/nuts.svg);
     background-size: auto;
     background-repeat: no-repeat;
@@ -192,8 +192,133 @@ h1 {
     color: var(--brandcolor);
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 50px;
 }
-.product-name{
+
+
+
+.cаtalog {
+
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card {
+    width: 300px;
     height: 300px;
-    background: url(../images/catalog.svg) no-repeat;
+    border-radius: 50%;
+    background: #EFEFEF;
+    box-shadow: 200px 0px rgba(255, 132, 69, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+
+
+}
+
+.card:last-child {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 220px;
+    flex-direction: column;
+}
+
+.brand-name {
+    color: var(--brandcolor);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: var(--RobotoSlab);
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+.brand-description {
+    color: var(--brandcolor);
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pistachio {
+    background-image: url("../images/hotpng12.svg");
+    background-position: 50% -10px, 100px 100px;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 250px;
+}
+
+.walnut {
+    background: url("../images/neworeh.svg") 60% 20px no-repeat;
+    background-size: 220px;
+    height: 250px;
+}
+
+.hazelnut {
+    background: url("../images/hotpng11.svg") 60% -20px no-repeat;
+    background-size: 250px;
+    height: 250px;
+}
+
+.card-description {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+
+.card-description_item {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid var(--brandcolor);
+    border-radius: 10px;
+}
+
+.name-product {
+    padding: 10px;
+    border-bottom: 1px solid var(--brandcolor);
+    width: 200px;
+    margin: 0 auto;
+    font-family: var(--RobotoSlab);
+    text-transform: uppercase;
+    color: var(--brandcolor);
+}
+
+.substitute {
+    padding: 20px;
+    text-transform: uppercase;
+    color: var(--brandcolor);
+
+}
+
+.substitute+p {
+    color: var(--brandcolor);
+    margin-bottom: 30px;
+}
+.card-button{
+    border:1px solid var(--brandcolorlight);
+    padding: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    background:var(--brandcolorlight);
+    color:var(--whitecolors);
+    border-radius:10px;
+    box-shadow: 3px 3px var(--brandcolor);
+    font-size: 14px;    
+}
+.content h2{
+    border-bottom: 3px solid var(--brandcolor);
+    padding: 10px 0;
+    color:var(--brandcolor);
+    margin-bottom: 10px;
+    display: inline-block;
 }
